@@ -1,0 +1,48 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height:100vh;
+}
+.container>div{
+    width:500px;
+    /* min-height:60px; */
+    height:60px;
+    overflow:hidden;
+    
+    background-color: bisque;
+    padding:20px;
+    margin:10px;
+    transition:all 1s;
+    
+}
+.topic{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topic>p{
+    font-size:30px;
+    font-weight: bolder;
+    display: inline;
+}
+div>div+p{
+    /* display:none; */
+    font-size:16px;
+    margin-top:10px;
+    transition:all 1s;
+
+}
+i{
+    font-size:20px;
+    transform: rotate(0deg);
+    transition: all 1s;
+}
